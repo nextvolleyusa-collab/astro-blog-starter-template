@@ -10,41 +10,162 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 	<head>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 	</head>
+
 	<body>
 		<Header />
+
 		<main>
-			<h1>🧑‍🚀 Hello, Astronaut!</h1>
-			<p>
-				Welcome to the official <a href="https://astro.build/">Astro</a> blog starter template. This
-				template serves as a lightweight, minimally-styled starting point for anyone looking to build
-				a personal website, blog, or portfolio with Astro.
-			</p>
-			<p>
-				This template comes with a few integrations already configured in your
-				<code>astro.config.mjs</code> file. You can customize your setup with
-				<a href="https://astro.build/integrations">Astro Integrations</a> to add tools like Tailwind,
-				React, or Vue to your project.
-			</p>
-			<p>Here are a few ideas on how to get started with the template:</p>
-			<ul>
-				<li>Edit this page in <code>src/pages/index.astro</code></li>
-				<li>Edit the site header items in <code>src/components/Header.astro</code></li>
-				<li>Add your name to the footer in <code>src/components/Footer.astro</code></li>
-				<li>Check out the included blog posts in <code>src/content/blog/</code></li>
-				<li>Customize the blog post page layout in <code>src/layouts/BlogPost.astro</code></li>
-			</ul>
-			<p>
-				Have fun! If you get stuck, remember to <a href="https://docs.astro.build/"
-					>read the docs
-				</a> or <a href="https://astro.build/chat">join us on Discord</a> to ask questions.
-			</p>
-			<p>
-				Looking for a blog template with a bit more personality? Check out <a
-					href="https://github.com/Charca/astro-blog-template"
-					>astro-blog-template
-				</a> by <a href="https://twitter.com/Charca">Maxi Ferreira</a>.
-			</p>
+
+			<!-- HERO SECTION -->
+			<section>
+				<h1>Turning volleyball talent into U.S. college opportunities.</h1>
+
+				<p>
+					We connect ambitious volleyball athletes with college coaches and universities across the United States —
+					helping you move from first contact to your final takeoff.
+				</p>
+
+				<p>
+					From making a standout highlight video to getting offers to booking your flight and taking off...
+				</p>
+
+				<div>
+					<a href="#apply">Apply Now</a>
+					<a href="#how">Learn More</a>
+				</div>
+			</section>
+
+			<hr />
+
+			<!-- TRUST LINE -->
+			<section>
+				<p>
+					Built for athletes who want to compete at the next level in the United States.
+					Focused on visibility, communication, and real recruiting opportunities.
+				</p>
+			</section>
+
+			<hr />
+
+			<!-- HOW IT WORKS -->
+			<section id="how">
+				<h2>Your pathway to U.S. college volleyball</h2>
+
+				<h3>1. Build your profile</h3>
+				<p>We help you create a strong recruiting profile and highlight video that gets attention from coaches.</p>
+
+				<h3>2. Connect with coaches</h3>
+				<p>Your profile is shared with college programs across the United States.</p>
+
+				<h3>3. Get recruited</h3>
+				<p>Communicate directly with coaches and explore scholarship opportunities.</p>
+
+				<h3>4. Secure your offer</h3>
+				<p>We guide you through offers, decisions, and paperwork.</p>
+
+				<h3>5. Take off</h3>
+				<p>From acceptance to travel — we support your final steps to the United States.</p>
+			</section>
+
+			<hr />
+
+			<!-- SERVICES -->
+			<section>
+				<h2>What we provide</h2>
+
+				<ul>
+					<li>Recruiting profile setup</li>
+					<li>Highlight video guidance</li>
+					<li>Coach outreach support</li>
+					<li>Exposure to U.S. college programs</li>
+					<li>Recruiting communication help</li>
+					<li>Transfer guidance (if applicable)</li>
+				</ul>
+			</section>
+
+			<hr />
+
+			<!-- WHO IT IS FOR -->
+			<section>
+				<h2>Built for ambitious athletes</h2>
+
+				<p>
+					For volleyball players who want to compete at the collegiate level in the United States
+					and are serious about taking the next step in their athletic career.
+				</p>
+
+				<p>
+					Clear process. Real opportunities. No confusion.
+				</p>
+			</section>
+
+			<hr />
+
+			<!-- APPLY SECTION -->
+			<section id="apply">
+				<h2>Start your recruiting journey</h2>
+
+				<p>
+					Fill out your application below. We will review your profile and check available opportunities.
+				</p>
+
+				<!-- FORM (placeholder setup - connect later to Formspree or Cloudflare Worker) -->
+				<form method="POST" action="https://formspree.io/f/YOUR_ID_HERE">
+					
+					<label>
+						Full Name
+						<input type="text" name="name" required />
+					</label>
+
+					<label>
+						Position
+						<input type="text" name="position" required />
+					</label>
+
+					<label>
+						Graduation Year
+						<input type="text" name="grad_year" required />
+					</label>
+
+					<label>
+						Country
+						<input type="text" name="country" />
+					</label>
+
+					<label>
+						Email
+						<input type="email" name="email" required />
+					</label>
+
+					<label>
+						Video Link
+						<input type="url" name="video" />
+					</label>
+
+					<label>
+						Message
+						<textarea name="message"></textarea>
+					</label>
+
+					<button type="submit">Submit Application</button>
+				</form>
+			</section>
+
+			<hr />
+
+			<!-- FINAL CTA -->
+			<section>
+				<h2>Ready to get recruited?</h2>
+
+				<p>
+					Your next step in volleyball starts here — take the first move toward playing in the United States.
+				</p>
+
+				<a href="#apply">Apply Now</a>
+			</section>
+
 		</main>
+
 		<Footer />
 	</body>
 </html>
