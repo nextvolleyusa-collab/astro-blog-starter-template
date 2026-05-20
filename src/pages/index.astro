@@ -2,13 +2,13 @@
 import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
-import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+import { SITE_DESCRIPTION } from '../consts';
 ---
 
 <!doctype html>
 <html lang="en">
 	<head>
-		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+		<BaseHead title="NextVolley USA" description={SITE_DESCRIPTION} />
 	</head>
 
 	<body>
@@ -16,152 +16,98 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 
 		<main>
 
-			<!-- HERO SECTION -->
+			<!-- HERO -->
 			<section>
-				<h1>Turning volleyball talent into U.S. college opportunities.</h1>
-
-				<p>
-					We connect ambitious volleyball athletes with college coaches and universities across the United States —
-					helping you move from first contact to your final takeoff.
-				</p>
-
-				<p>
-					From making a standout highlight video to getting offers to booking your flight and taking off...
-				</p>
-
-				<div>
-					<a href="#apply">Apply Now</a>
-					<a href="#how">Learn More</a>
-				</div>
+				<h1>NextVolley USA</h1>
+				<p>Volleyball recruiting service connecting athletes with college opportunities across the United States.</p>
 			</section>
 
 			<hr />
 
-			<!-- TRUST LINE -->
+			<!-- NAV / QUICK OPTIONS -->
 			<section>
-				<p>
-					Built for athletes who want to compete at the next level in the United States.
-					Focused on visibility, communication, and real recruiting opportunities.
-				</p>
-			</section>
-
-			<hr />
-
-			<!-- HOW IT WORKS -->
-			<section id="how">
-				<h2>Your pathway to U.S. college volleyball</h2>
-
-				<h3>1. Build your profile</h3>
-				<p>We help you create a strong recruiting profile and highlight video that gets attention from coaches.</p>
-
-				<h3>2. Connect with coaches</h3>
-				<p>Your profile is shared with college programs across the United States.</p>
-
-				<h3>3. Get recruited</h3>
-				<p>Communicate directly with coaches and explore scholarship opportunities.</p>
-
-				<h3>4. Secure your offer</h3>
-				<p>We guide you through offers, decisions, and paperwork.</p>
-
-				<h3>5. Take off</h3>
-				<p>From acceptance to travel — we support your final steps to the United States.</p>
-			</section>
-
-			<hr />
-
-			<!-- SERVICES -->
-			<section>
-				<h2>What we provide</h2>
+				<h2>Explore</h2>
 
 				<ul>
-					<li>Recruiting profile setup</li>
-					<li>Highlight video guidance</li>
-					<li>Coach outreach support</li>
-					<li>Exposure to U.S. college programs</li>
-					<li>Recruiting communication help</li>
-					<li>Transfer guidance (if applicable)</li>
+					<li><a href="#about">About NextVolley USA</a></li>
+					<li><a href="#process">How Recruiting Works</a></li>
+					<li><a href="#services">What We Help With</a></li>
+					<li><a href="#faq">FAQ</a></li>
+					<li><a href="#contact">Contact</a></li>
 				</ul>
 			</section>
 
 			<hr />
 
-			<!-- WHO IT IS FOR -->
-			<section>
-				<h2>Built for ambitious athletes</h2>
-
+			<!-- ABOUT -->
+			<section id="about">
+				<h2>About NextVolley USA</h2>
 				<p>
-					For volleyball players who want to compete at the collegiate level in the United States
-					and are serious about taking the next step in their athletic career.
-				</p>
-
-				<p>
-					Clear process. Real opportunities. No confusion.
+					NextVolley USA helps volleyball athletes connect with college coaches and universities across the United States.
+					We focus on creating visibility and building real recruiting opportunities for players looking to compete at the next level.
 				</p>
 			</section>
 
 			<hr />
 
-			<!-- APPLY SECTION -->
-			<section id="apply">
-				<h2>Start your recruiting journey</h2>
+			<!-- PROCESS -->
+			<section id="process">
+				<h2>How Recruiting Works</h2>
 
-				<p>
-					Fill out your application below. We will review your profile and check available opportunities.
-				</p>
+				<ol>
+					<li>Create your volleyball profile and highlight video</li>
+					<li>Get seen by college coaches in the United States</li>
+					<li>Communicate with programs and explore opportunities</li>
+					<li>Receive offers and choose your school</li>
+					<li>Prepare for your move and take off</li>
+				</ol>
+			</section>
 
-				<!-- FORM (placeholder setup - connect later to Formspree or Cloudflare Worker) -->
-				<form method="POST" action="https://formspree.io/f/YOUR_ID_HERE">
-					
-					<label>
-						Full Name
-						<input type="text" name="name" required />
-					</label>
+			<hr />
 
-					<label>
-						Position
-						<input type="text" name="position" required />
-					</label>
+			<!-- SERVICES -->
+			<section id="services">
+				<h2>What We Help With</h2>
 
-					<label>
-						Graduation Year
-						<input type="text" name="grad_year" required />
-					</label>
+				<ul>
+					<li>Recruiting profile setup</li>
+					<li>Highlight video guidance</li>
+					<li>Coach outreach strategy</li>
+					<li>College exposure support</li>
+					<li>Recruiting process guidance</li>
+				</ul>
+			</section>
 
-					<label>
-						Country
-						<input type="text" name="country" />
-					</label>
+			<hr />
 
-					<label>
-						Email
-						<input type="email" name="email" required />
-					</label>
+			<!-- FAQ -->
+			<section id="faq">
+				<h2>FAQ</h2>
 
-					<label>
-						Video Link
-						<input type="url" name="video" />
-					</label>
+				<p><strong>What is NextVolley USA?</strong><br />
+				A volleyball recruiting service helping athletes get opportunities in the United States.</p>
 
-					<label>
-						Message
-						<textarea name="message"></textarea>
-					</label>
+				<p><strong>Who is it for?</strong><br />
+				International volleyball players who want to play college volleyball in the U.S.</p>
 
-					<button type="submit">Submit Application</button>
-				</form>
+				<p><strong>How does it work?</strong><br />
+				We help create visibility and connect athletes with college coaches.</p>
+			</section>
+
+			<hr />
+
+			<!-- CONTACT (placeholder only for now) -->
+			<section id="contact">
+				<h2>Contact</h2>
+				<p>If you are interested in getting recruited, more information will be available here soon.</p>
 			</section>
 
 			<hr />
 
 			<!-- FINAL CTA -->
 			<section>
-				<h2>Ready to get recruited?</h2>
-
-				<p>
-					Your next step in volleyball starts here — take the first move toward playing in the United States.
-				</p>
-
-				<a href="#apply">Apply Now</a>
+				<h2>Next step in your volleyball journey</h2>
+				<p>Start building your path toward college volleyball in the United States with NextVolley USA.</p>
 			</section>
 
 		</main>
